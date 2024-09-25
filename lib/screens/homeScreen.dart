@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:notes_app/widgets/CustomNoteItem.dart';
 import 'package:notes_app/widgets/CustomSearchIcon.dart';
 
 class home_screen extends StatelessWidget {
@@ -8,7 +9,7 @@ class home_screen extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(brightness: Brightness.dark),
+      theme: ThemeData(brightness: Brightness.dark, fontFamily: 'Poppins'),
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.transparent,
@@ -27,7 +28,7 @@ class home_screen extends StatelessWidget {
             ),
           ],
         ),
-        body: Container(),
+        body: NoteItem(),
       ),
     );
   }
